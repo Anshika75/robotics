@@ -32,12 +32,6 @@ function home(event){
              </div>
     `;
 }
-{/* <p>
-            <b>• Innovation Quest:</b> Explore innovative ideas and projects in science and technology. <br/>
-            <b>• Robo Challenges:</b> Engage in robotics challenges like RoboSoccer, Robo Race, Sumobot, and more. <br/>
-            <b>• Drone Adventures:</b> Take part in drone-related challenges such as Drone Race, Drone Soccer, and Drone Rescue. <br/>
-            <b>• RC Thrills:</b> Experience the thrill of RC challenges including RC Electric Car Racing and RC Craft Challenge. <br/>
-            <b>• STEM Challenges:</b> Participate in various STEM challenges like Fastest Line Follower and Maze Solver. <br/> */}
 
 function theme(event) {
     landingcontent.classList.add("theme");
@@ -47,6 +41,7 @@ function theme(event) {
         <h1><span style="color: cyan">Themes</span> <span style="color: red;">Across</span></h1>
         <div class="grid">
             <a class="card">
+                <img src="https://www.dropbox.com/scl/fi/oobkizj404268ahqcrhz0/icon_01.png?rlkey=xhfg4shtcb3m6dn0yvjpzr3vz&st=gfj00coe&dl=1" alt="robotics">
                 <h2>Innovation Quest</h2>
             </a>
             <a class="card">
