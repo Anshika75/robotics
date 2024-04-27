@@ -17,10 +17,14 @@ function about(event) {
     `;
 }
 function home(event){
-    landingcontent.className = "landing";
+    landingcontent.classList.remove("about");
     landingcontent.innerHTML = `
-
-
-}`
+    <h1><span style="color: cyan">TECH</span><span style="color: red;">NOXIAN</span></h1>
+            <button class="button-49" role="button">Register Now</button>
+            <div class="menu">
+                <a  onclick="about()">About</a> •
+                <a href="">Themes</a> •
+                <a href="">Guidelines</a>
+             </div>`
 
 }
