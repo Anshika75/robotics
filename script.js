@@ -32,6 +32,7 @@ function home(event){
 }
 function theme(event) {
     landingcontent.classList.add("theme");
+    landingcontent.classList.remove("about");
     landingcontent.innerHTML = `
         <h1><span style="color: cyan">About</span> <span style="color: red;">Event</span></h1>
         <p>
