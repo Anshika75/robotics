@@ -25,7 +25,7 @@ function home(event){
             <button class="button-49" role="button">Register Now</button>
             <div class="menu">
                 <a  onclick="about()">About</a> •
-                <a href="">Themes</a> •
+                <a onclick="theme()">Themes</a> •
                 <a href="">Guidelines</a>
              </div>
     `;
@@ -40,8 +40,8 @@ function theme(event) {
             There's going to be Wide Range of Competitions, Inclusive Participation, Hands-on Learning, Certifications, Prizes, Support and Guidance, Networking Opportunities and Promotion of Innovation.
         </p>
         <div class="menu">
-                <a  onclick="home()">Home</a> •
-                <a href="">Themes</a> •
+                <a  onclick="about()">About</a> •
+                <a onclick="home()">Themes</a> •
                 <a href="">Guidelines</a>
         </div>
     `;
