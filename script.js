@@ -2,6 +2,7 @@
 var landingcontent = document.getElementById('landingcontent');
 
 function about(event) {
+    landingcontent.addClass = "about";
     landingcontent.innerHTML = `
         <h1><span style="color: cyan">About</span> <span style="color: red;">Event</span></h1>
         <p>
