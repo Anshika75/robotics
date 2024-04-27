@@ -12,7 +12,7 @@ function about(event) {
         </p>
         <div class="menu">
                 <a  onclick="home()">Home</a> •
-                <a href="">Themes</a> •
+                <a onclick="theme()">Themes</a> •
                 <a href="">Guidelines</a>
         </div>
     `;
@@ -24,7 +24,7 @@ function home(event){
     <h1><span style="color: cyan">TECH</span><span style="color: red;">NOXIAN</span></h1>
             <button class="button-49" role="button">Register Now</button>
             <div class="menu">
-                <a  onclick="about()">About</a> •
+                <a onclick="about()">About</a> •
                 <a onclick="theme()">Themes</a> •
                 <a href="">Guidelines</a>
              </div>

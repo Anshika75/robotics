@@ -63,6 +63,13 @@ a {
     background-color: #fff1;
     padding: 50px;
 }
+.theme.content{
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    background-color: #fff1;
+    padding: 50px;
+}
 .landing .content h1 {
     font-size: 7rem;
     margin-bottom: 1rem;
@@ -272,12 +279,17 @@ a {
 }
 
 @media (max-width: 768px) {
+    .landing .content{
+        padding: 25px;
+    }
+
     .landing .content h1 {
         font-size: 2.4rem;
     }
 
     .landing .content p {
         font-size: 1rem;
+        line-height: 1.5rem;
     }
 
     .landing .content button {
@@ -291,18 +303,36 @@ a {
     }
 
     .menu {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .menu a {
-        font-size: 1rem;
+        font-size: 0.8rem;
         line-height: 1.7rem;
     }
+
+    .border-b {
+        bottom: 35px;
+    }
+
+    
+    .border-t {
+        top: 35px;
+    }
+
+
 }
 
-@media (max-width: 1024px){
+@media (min-width:768px) and (max-width: 1024px){
+    .landing .content{
+        padding: 50px;
+    }
     .landing .content h1 {
         font-size: 5.5rem;
+    }
+    .landing .content p {
+        font-size: 2rem;
+        line-height: 2.75rem;
     }
     .landing .content button {
         font-size: 2rem;
@@ -315,12 +345,15 @@ a {
         height: 70px;
     }
     .menu {
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin-top: 100px;
+    }
+    .about .menu {
+        margin-top: 50px;
     }
 
     .menu a {
-        font-size: 2.5rem;
+        font-size: 2rem;
         line-height: 1.7rem;
     }
 } 
