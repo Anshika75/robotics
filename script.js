@@ -25,6 +25,6 @@ function home(event){
                 <a  onclick="about()">About</a> •
                 <a href="">Themes</a> •
                 <a href="">Guidelines</a>
-             </div>`
-
+             </div>
+    `;
 }
