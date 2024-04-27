@@ -56,26 +56,44 @@ a {
     position: relative;
     text-align: center;
 }
-.about.content{
+
+.about.content {
     z-index: 1;
     position: relative;
     text-align: center;
     background-color: #fff1;
+    width: 100%;
     padding: 50px;
 }
-.theme.content{
+
+.theme.content {
     z-index: 1;
     position: relative;
     text-align: center;
     background-color: #fff1;
+    width: 100%;
     padding: 50px;
 }
+
+.guidelines.content {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    background-color: #fff1;
+    width: 100%;
+    padding: 50px;
+}
+
 .landing .content h1 {
     font-size: 7rem;
     margin-bottom: 1rem;
     opacity: 0.7;
     font-family: 'Orbitron', sans-serif;
     text-shadow: 0 0 10px #0002;
+}
+
+.guidelines.content h1 {
+    font-size: 5rem;
 }
 
 .landing .content p {
@@ -85,7 +103,15 @@ a {
     text-align: justify;
     opacity: 0.7;
 }
-.theme.content p{
+
+.guidelines.content p {
+    column-count: 2;
+    column-gap: 50px;
+    padding: 0 50px;
+}
+
+.theme.content p,
+.guidelines.content p {
     line-height: 2.5rem;
 }
 
@@ -282,7 +308,7 @@ a {
 }
 
 @media (max-width: 768px) {
-    .landing .content{
+    .landing .content {
         padding: 15px;
     }
 
@@ -290,9 +316,10 @@ a {
         font-size: 2.4rem;
     }
 
-    .theme.content h1{
+    .theme.content h1 {
         font-size: 1.7rem;
     }
+
     .landing .content p {
         font-size: 1rem;
         line-height: 1.5rem;
@@ -300,6 +327,13 @@ a {
 
     .landing .content button {
         font-size: 1.25rem;
+    }
+
+    .guidelines.content p {
+        column-count: 1;
+        column-gap: 0px;
+        padding: 0 0px;
+        line-height: 2rem;
     }
 
     .button-49,
@@ -322,7 +356,7 @@ a {
         height: 15px;
     }
 
-    
+
     .border-t {
         top: 35px;
         height: 15px;
@@ -331,20 +365,32 @@ a {
 
 }
 
-@media (min-width:768px) and (max-width: 1024px){
-    .landing .content{
+@media (min-width:768px) and (max-width: 1024px) {
+    .landing .content {
         padding: 50px;
     }
+
     .landing .content h1 {
         font-size: 5.5rem;
     }
-    .theme.content h1{
+
+    .theme.content h1 {
         font-size: 3.5rem;
     }
+    
+
     .landing .content p {
         font-size: 2rem;
         line-height: 2.75rem;
     }
+
+    .guidelines.content p {
+        column-count: 1;
+        column-gap: 0px;
+        padding: 0 0px;
+        line-height: 3.75rem;
+    }
+
     .landing .content button {
         font-size: 2rem;
         margin-top: 30px;
@@ -355,18 +401,40 @@ a {
         width: 300px;
         height: 70px;
     }
+
     .menu {
         font-size: 2rem;
         margin-top: 100px;
     }
+
     .about .menu {
         margin-top: 50px;
     }
+
     .theme .menu {
         margin-top: 40px;
     }
+
+    .guidelines .menu {
+        margin-top: 40px;
+    }
+
     .menu a {
         font-size: 2rem;
         line-height: 1.7rem;
     }
-} 
+
+    
+
+    .border-b {
+        bottom: 90px;
+        height: 35px;
+    }
+
+
+    .border-t {
+        top: 90px;
+        height: 35px;
+    }
+
+}

@@ -4,6 +4,7 @@ var landingcontent = document.getElementById('landingcontent');
 function about(event) {
     landingcontent.classList.add("about");
     landingcontent.classList.remove("theme");
+    landingcontent.classList.remove("guidelines");
     landingcontent.innerHTML = `
         <h1><span style="color: cyan">About</span> <span style="color: red;">Event</span></h1>
         <p>
@@ -20,6 +21,7 @@ function about(event) {
 function home(event){
     landingcontent.classList.remove("about");
     landingcontent.classList.remove("theme");
+    landingcontent.classList.remove("guidelines");
     landingcontent.innerHTML = `
     <h1><span style="color: cyan">TECH</span><span style="color: red;">NOXIAN</span></h1>
             <button class="button-49" role="button">Register Now</button>
@@ -33,6 +35,7 @@ function home(event){
 function theme(event) {
     landingcontent.classList.add("theme");
     landingcontent.classList.remove("about");
+    landingcontent.classList.remove("guidelines");
     landingcontent.innerHTML = `
         <h1><span style="color: cyan">Themes</span> <span style="color: red;">Across</span></h1>
         <p>
@@ -54,18 +57,18 @@ function theme(event) {
 function guidelines(event) {
     landingcontent.classList.add("guidelines");
     landingcontent.classList.remove("about");
+    landingcontent.classList.remove("theme");
     landingcontent.innerHTML = `
         <h1><span style="color: cyan">Event</span> <span style="color: red;">Rules</span></h1>
         <p>
-            <b>• Originality:</b> Encourage original ideas and solutions. <br/>
-            <b>• Safety:</b> Prioritize safety in project development and presentations. <br/>
-            <b>• Compliance:</b> Follow competition rules and guidelines strictly. <br/>
-            <b>• Documentation:</b> Maintain proper documentation of project progress. <br/>
-            <b>• Presentation:</b> Showcase projects confidently and effectively to the judges. <br/>
-            <b>• Collaboration:</b> Foster effective teamwork and collaboration among team members. <br/>
-            <b>• Creativity:</b> Think outside the box and explore new possibilities. <br/>
-            <b>• Sportsmanship:</b> Compete with integrity and respect for fellow participants. <br/>
-            <b>• Time Management:</b> Meet deadlines and manage time effectively throughout the competition. <br/>
+            <b>• Originality:</b>  Encourage fresh ideas. <br/>
+            <b>• Safety:</b> Prioritize project safety. <br/>
+            <b>• Documentation:</b> Keep project progress documented. <br/>
+            <b>• Presentation:</b> Confidently showcase projects. <br/>
+            <b>• Collaboration:</b> Foster effective teamwork. <br/>
+            <b>• Creativity:</b> Think outside the box. <br/>
+            <b>• Sportsmanship:</b> Compete with integrity. <br/>
+            <b>• Time Management:</b> Meet deadlines effectively. <br/>
         </p>
         <div class="menu">
                 <a  onclick="about()">About</a> •
