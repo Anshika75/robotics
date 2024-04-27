@@ -85,6 +85,9 @@ a {
     text-align: justify;
     opacity: 0.7;
 }
+.theme.content p{
+    line-height: 2.5rem;
+}
 
 .landing .content button {
     text-decoration: none;
@@ -280,13 +283,16 @@ a {
 
 @media (max-width: 768px) {
     .landing .content{
-        padding: 25px;
+        padding: 15px;
     }
 
     .landing .content h1 {
         font-size: 2.4rem;
     }
 
+    .theme.content h1{
+        font-size: 1.7rem;
+    }
     .landing .content p {
         font-size: 1rem;
         line-height: 1.5rem;
@@ -313,11 +319,13 @@ a {
 
     .border-b {
         bottom: 35px;
+        height: 15px;
     }
 
     
     .border-t {
         top: 35px;
+        height: 15px;
     }
 
 
@@ -329,6 +337,9 @@ a {
     }
     .landing .content h1 {
         font-size: 5.5rem;
+    }
+    .theme.content h1{
+        font-size: 3.5rem;
     }
     .landing .content p {
         font-size: 2rem;
@@ -351,7 +362,9 @@ a {
     .about .menu {
         margin-top: 50px;
     }
-
+    .theme .menu {
+        margin-top: 40px;
+    }
     .menu a {
         font-size: 2rem;
         line-height: 1.7rem;
