@@ -13,7 +13,7 @@ function about(event) {
         <div class="menu">
                 <a  onclick="home()">Home</a> •
                 <a onclick="theme()">Themes</a> •
-                <a href="">Guidelines</a>
+                <a onclick="guidelines()">Guidelines</a>
         </div>
     `;
 }
@@ -26,7 +26,7 @@ function home(event){
             <div class="menu">
                 <a onclick="about()">About</a> •
                 <a onclick="theme()">Themes</a> •
-                <a href="">Guidelines</a>
+                <a onclick="guidelines()">Guidelines</a>
              </div>
     `;
 }
@@ -45,7 +45,42 @@ function theme(event) {
         <div class="menu">
                 <a  onclick="about()">About</a> •
                 <a onclick="home()">Home</a> •
-                <a href="">Guidelines</a>
+                <a onclick="guidelines()">Guidelines</a>
+        </div>
+    `;
+}
+
+// Guidelines
+// Originality: Encourage original ideas and solutions.
+// Safety: Prioritize safety in project development and presentations.
+// Compliance: Follow competition rules and guidelines strictly.
+// Documentation: Maintain proper documentation of project progress.
+// Presentation: Showcase projects confidently and effectively to the judges.
+// Collaboration: Foster effective teamwork and collaboration among team members.
+// Creativity: Think outside the box and explore new possibilities.
+// Sportsmanship: Compete with integrity and respect for fellow participants.
+// Time Management: Meet deadlines and manage time effectively throughout the competition.
+
+function guidelines(event) {
+    landingcontent.classList.add("guidelines");
+    landingcontent.classList.remove("about");
+    landingcontent.innerHTML = `
+        <h1><span style="color: cyan">Guidelines</span> <span style="color: red;">For Participants</span></h1>
+        <p>
+            <b>• Originality:</b> Encourage original ideas and solutions. <br/>
+            <b>• Safety:</b> Prioritize safety in project development and presentations. <br/>
+            <b>• Compliance:</b> Follow competition rules and guidelines strictly. <br/>
+            <b>• Documentation:</b> Maintain proper documentation of project progress. <br/>
+            <b>• Presentation:</b> Showcase projects confidently and effectively to the judges. <br/>
+            <b>• Collaboration:</b> Foster effective teamwork and collaboration among team members. <br/>
+            <b>• Creativity:</b> Think outside the box and explore new possibilities. <br/>
+            <b>• Sportsmanship:</b> Compete with integrity and respect for fellow participants. <br/>
+            <b>• Time Management:</b> Meet deadlines and manage time effectively throughout the competition. <br/>
+        </p>
+        <div class="menu">
+                <a  onclick="about()">About</a> •
+                <a onclick="theme()">Themes</a> •
+                <a onclick="home()">Home</a>
         </div>
     `;
 }
