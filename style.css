@@ -56,7 +56,13 @@ a {
     position: relative;
     text-align: center;
 }
-
+.about .content{
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    background-color: #fff1;
+    padding: 50px;
+}
 .landing .content h1 {
     font-size: 7rem;
     margin-bottom: 1rem;
@@ -67,8 +73,9 @@ a {
 
 .landing .content p {
     font-family: 'VT323', monospace;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
+    text-align: justify;
 }
 
 .landing .content button {
@@ -195,13 +202,15 @@ a {
     margin: 0 1rem;
     position: relative;
 }
-.menu a:hover{
+
+.menu a:hover {
     text-shadow: 0.15em 0 0 #ec2225, -0.025em -0.07em 0 cyan;
 }
+
 .landing .content h1 {
     text-shadow: 0.05em 0 0 #ec2225, -0.025em -0.05em 0 #313f97,
         0.025em 0.05em 0 #50c878;
-    color: rgba(0, 194, 203, 0.2);
+    color: rgba(0, 194, 203, 0.5);
 }
 
 .border-b {
@@ -218,7 +227,7 @@ a {
     left: -900%;
     height: 100%;
     width: 1000%;
-    background: repeating-linear-gradient(-75deg, rgba(255, 0, 0, 0.2), rgba(255, 0, 0, 0.2) 60px, rgba(0, 255, 255, 0.2) 10px, rgba(0, 255, 255, 0.2) 120px);
+    background: repeating-linear-gradient(-75deg, rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5) 60px, rgba(0, 255, 255, 0.5) 10px, rgba(0, 255, 255, 0.5) 120px);
     animation: slide-b 75s linear infinite;
 }
 
@@ -246,7 +255,7 @@ a {
     left: 0%;
     height: 100%;
     width: 1000%;
-    background: repeating-linear-gradient(75deg, rgba(255, 0, 0, 0.2), rgba(255, 0, 0, 0.2) 60px, rgba(0, 255, 255, 0.2) 10px, rgba(0, 255, 255, 0.2) 120px);
+    background: repeating-linear-gradient(75deg, rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5) 60px, rgba(0, 255, 255, 0.5) 10px, rgba(0, 255, 255, 0.5) 120px);
     animation: slide-t 75s linear infinite;
 }
 
@@ -259,3 +268,57 @@ a {
         left: -900%;
     }
 }
+
+@media (max-width: 768px) {
+    .landing .content h1 {
+        font-size: 2.4rem;
+    }
+
+    .landing .content p {
+        font-size: 1rem;
+    }
+
+    .landing .content button {
+        font-size: 1.25rem;
+    }
+
+    .button-49,
+    .button-49:after {
+        width: 200px;
+        height: 40px;
+    }
+
+    .menu {
+        font-size: 1rem;
+    }
+
+    .menu a {
+        font-size: 1rem;
+        line-height: 1.7rem;
+    }
+}
+
+@media (max-width: 1024px){
+    .landing .content h1 {
+        font-size: 5.5rem;
+    }
+    .landing .content button {
+        font-size: 2rem;
+        margin-top: 30px;
+    }
+
+    .button-49,
+    .button-49:after {
+        width: 300px;
+        height: 70px;
+    }
+    .menu {
+        font-size: 2.5rem;
+        margin-top: 100px;
+    }
+
+    .menu a {
+        font-size: 2.5rem;
+        line-height: 1.7rem;
+    }
+} 
