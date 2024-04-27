@@ -2,10 +2,7 @@
 var landingcontent = document.getElementById('landingcontent');
 
 function about(event) {
-    // change classname
-    landingcontent.className = "about";
     landingcontent.innerHTML = `
-    <div class="content">
         <h1><span style="color: cyan">About</span> <span style="color: red;">Event</span></h1>
         <p>
             Technoxian is an internal competition held at Chandigarh University, offering students a platform to showcase their skills and creativity in various robotics and technology-related challenges. The competition aims to foster innovation, teamwork, and problem-solving abilities among participants.
@@ -16,6 +13,13 @@ function about(event) {
                 <a href="">Themes</a> •
                 <a href="">Guidelines</a>
         </div>
-    </div>
     `;
+}
+function home(event){
+    landingcontent.className = "landing";
+    landingcontent.innerHTML = `
+
+
+}`
+
 }
