@@ -50,22 +50,12 @@ function theme(event) {
     `;
 }
 
-// Guidelines
-// Originality: Encourage original ideas and solutions.
-// Safety: Prioritize safety in project development and presentations.
-// Compliance: Follow competition rules and guidelines strictly.
-// Documentation: Maintain proper documentation of project progress.
-// Presentation: Showcase projects confidently and effectively to the judges.
-// Collaboration: Foster effective teamwork and collaboration among team members.
-// Creativity: Think outside the box and explore new possibilities.
-// Sportsmanship: Compete with integrity and respect for fellow participants.
-// Time Management: Meet deadlines and manage time effectively throughout the competition.
 
 function guidelines(event) {
     landingcontent.classList.add("guidelines");
     landingcontent.classList.remove("about");
     landingcontent.innerHTML = `
-        <h1><span style="color: cyan">Guidelines</span> <span style="color: red;">For Participants</span></h1>
+        <h1><span style="color: cyan">Event</span> <span style="color: red;">Rules</span></h1>
         <p>
             <b>• Originality:</b> Encourage original ideas and solutions. <br/>
             <b>• Safety:</b> Prioritize safety in project development and presentations. <br/>
