@@ -22,6 +22,7 @@ function home(event){
     landingcontent.classList.remove("theme");
     landingcontent.classList.remove("guidelines");
     landingcontent.innerHTML = `
+    <p class="toptext">Internal competition for</p>
     <h1><span style="color: cyan">TECH</span><span style="color: red;">NOXIAN</span></h1>
             <button class="button-49" role="button">Register Now</button>
             <div class="menu">
