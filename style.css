@@ -23,6 +23,10 @@ a {
     overflow: hidden;
 }
 
+.landing .toptext{
+    text-align: center;
+}
+
 .bottom {
     position: absolute;
     top: 0px;
