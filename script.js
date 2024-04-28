@@ -11,8 +11,8 @@ function about(event) {
             Technoxian is robot world competition held every year  for nominating teams from Chandigarh University provide a platform by organising internal competition offering students a platform to showcase their skills and creativity in various robotics and technology-related challenges. The competition aims to foster innovation, teamwork, and problem-solving abilities among participants. There's going to be Wide Range of Competitions, Inclusive Participation, Hands-on Learning, Certifications, Prizes, Support and Guidance, Networking Opportunities and Promotion of Innovation.
         </p>
         <div class="menu">
-                <a  onclick="home()">Home</a> •
-                <a onclick="theme()">Themes</a> •
+                <a  onclick="home()">Home</a>
+                <a onclick="theme()">Themes</a>
                 <a onclick="guidelines()">Guidelines</a>
         </div>
     `;
@@ -26,8 +26,8 @@ function home(event){
     <h1><span style="color: cyan">TECH</span><span style="color: red;">NOXIAN</span></h1>
             <button class="button-49" role="button">Register Now</button>
             <div class="menu">
-                <a onclick="about()">About</a> •
-                <a onclick="theme()">Themes</a> •
+                <a onclick="about()">About</a>
+                <a onclick="theme()">Themes</a>
                 <a onclick="guidelines()">Guidelines</a>
              </div>
     `;
@@ -62,8 +62,8 @@ function theme(event) {
             </a>
         </div>
         <div class="menu">
-                <a  onclick="about()">About</a> •
-                <a onclick="home()">Home</a> •
+                <a  onclick="about()">About</a>
+                <a onclick="home()">Home</a>
                 <a onclick="guidelines()">Guidelines</a>
         </div>
     `;
@@ -87,8 +87,8 @@ function guidelines(event) {
             <b>• Time Management:</b> Meet deadlines effectively. <br/>
         </p>
         <div class="menu">
-                <a  onclick="about()">About</a> •
-                <a onclick="theme()">Themes</a> •
+                <a  onclick="about()">About</a>
+                <a onclick="theme()">Themes</a>
                 <a onclick="home()">Home</a>
         </div>
     `;
