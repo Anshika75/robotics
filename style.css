@@ -30,7 +30,7 @@ a {
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 25px;
 }
 .nav img{
