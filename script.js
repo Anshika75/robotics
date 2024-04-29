@@ -13,22 +13,23 @@ function about(event) {
         <div class="menu">
                 <a  onclick="home()">Home</a>
                 <a onclick="theme()">Themes</a>
-                <a onclick="guidelines()">Guidelines</a>
         </div>
     `;
 }
-function home(event){
+function home(event) {
     landingcontent.classList.remove("about");
     landingcontent.classList.remove("theme");
     landingcontent.classList.remove("guidelines");
     landingcontent.innerHTML = `
     <p class="toptext">Internal competition for</p>
     <h1><span style="color: cyan">TECH</span><span style="color: red;">NOXIAN</span></h1>
-            <button class="button-49" role="button">Register Now</button>
+        <div class="btn-row">
+            <button class="button-49" role="button"><a>Register Now</a></button> 
+            <button class="button-49" role="button"><a>Guidelines</a></button>
+        </div>
             <div class="menu">
                 <a onclick="about()">About</a>
                 <a onclick="theme()">Themes</a>
-                <a onclick="guidelines()">Guidelines</a>
              </div>
     `;
 }
@@ -64,32 +65,7 @@ function theme(event) {
         <div class="menu">
                 <a  onclick="about()">About</a>
                 <a onclick="home()">Home</a>
-                <a onclick="guidelines()">Guidelines</a>
         </div>
     `;
 }
 
-
-function guidelines(event) {
-    landingcontent.classList.add("guidelines");
-    landingcontent.classList.remove("about");
-    landingcontent.classList.remove("theme");
-    landingcontent.innerHTML = `
-        <h1><span style="color: cyan">Event</span> <span style="color: red;">Rules</span></h1>
-        <p>
-            <b>• Originality:</b>  Encourage fresh ideas. <br/>
-            <b>• Safety:</b> Prioritize project safety. <br/>
-            <b>• Documentation:</b> Keep project progress documented. <br/>
-            <b>• Presentation:</b> Confidently showcase projects. <br/>
-            <b>• Collaboration:</b> Foster effective teamwork. <br/>
-            <b>• Creativity:</b> Think outside the box. <br/>
-            <b>• Sportsmanship:</b> Compete with integrity. <br/>
-            <b>• Time Management:</b> Meet deadlines effectively. <br/>
-        </p>
-        <div class="menu">
-                <a  onclick="about()">About</a>
-                <a onclick="theme()">Themes</a>
-                <a onclick="home()">Home</a>
-        </div>
-    `;
-}
