@@ -72,6 +72,7 @@ a {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0);
+    z-index: 1;
 }
 
 .landing .content {
@@ -510,17 +511,19 @@ a {
         margin-bottom: 10px;
     }
     .menu {
-        font-size: 2rem;
+        font-size: .8rem;
         margin-top: 50px;
     }
 
     .about .menu {
         margin-top: 50px;
+        z-index: 50;
     }
 
     .theme .menu {
         width: 100%;
         margin-top: 30px;
+        z-index: 50;
     }
 
     .theme .menu a{
@@ -581,10 +584,12 @@ a {
 
     .about .menu {
         margin-top: 50px;
+        z-index: 50;
     }
 
     .theme .menu {
         margin-top: 40px;
+        z-index: 50;
     }
 
     .guidelines .menu {
