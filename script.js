@@ -13,7 +13,8 @@ function about(event) {
         <div class="menu">
         Explore:
                 <a onclick="home()">Home</a> |
-                <a onclick="theme()">Themes</a>
+                <a onclick="theme()">Themes</a> |
+                <a onclick="sponsors()">Sponsors</a>
         </div>
     `;
 }
@@ -29,9 +30,9 @@ function home(event) {
             <button class="button-49" role="button"><a>Guidelines</a></button>
         </div>
             <div class="menu">
-            Explore: 
                 <a onclick="about()">About</a> |
-                <a onclick="theme()">Themes</a>
+                <a onclick="theme()">Themes</a> |
+                <a onclick="sponsors()">Sponsors</a>
              </div>
     `;
 }
@@ -65,10 +66,35 @@ function theme(event) {
             </a>
         </div>
         <div class="menu">
-        Explore:
                 <a  onclick="about()">About</a> |
-                <a onclick="home()">Home</a>
+                <a onclick="home()">Home</a> |
+                <a onclick="sponsors()">Sponsors</a>
         </div>
     `;
-}
+};
 
+function sponsors(event){
+    landingcontent.classList.add("theme");
+    landingcontent.classList.remove("about");
+    landingcontent.classList.remove("guidelines");
+    landingcontent.innerHTML = `
+        <h1><span style="color: cyan">Themes</span> <span style="color: red;">Across</span></h1>
+        <div class="grid">
+            <a href="https://www.technoxian.com/worldcupinnovation-contest#" class="card">
+                <img src="https://www.dropbox.com/scl/fi/oobkizj404268ahqcrhz0/icon_01.png?rlkey=xhfg4shtcb3m6dn0yvjpzr3vz&st=gfj00coe&dl=1" alt="robotics">
+            </a>
+            <a href="https://www.technoxian.com/worldcup" class="card">
+                <img src="https://www.dropbox.com/scl/fi/y6wezle9try83gincvcyt/icon_08.png?rlkey=zeujrdk564ney5bvxi2oc8eas&st=ztqzwgif&dl=1" alt="drone">
+            </a>
+            <a href="https://www.technoxian.com/worldcup" class="card">
+                <img src="https://www.dropbox.com/scl/fi/o51bphit4ank3xnso22l5/icon_10.png?rlkey=5wbpj5svjzyyz4sgmnbcuh375&st=fqichysr&dl=1" alt="rc">
+            </a>
+        </div>
+        <div class="menu">
+                <a  onclick="about()">About</a> |
+                <a onclick="home()">Home</a> |
+                <a onclick="theme()">Themes</a>
+        </div>
+    `;
+
+}
