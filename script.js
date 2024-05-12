@@ -4,7 +4,7 @@ var landingcontent = document.getElementById('landingcontent');
 function about(event) {
     landingcontent.classList.add("about");
     landingcontent.classList.remove("theme");
-    landingcontent.classList.remove("guidelines");
+    landingcontent.classList.remove("sponsors");
     landingcontent.innerHTML = `
         <h1><span style="color: cyan">About</span> <span style="color: red;">Event</span></h1>
         <p>
@@ -21,7 +21,7 @@ function about(event) {
 function home(event) {
     landingcontent.classList.remove("about");
     landingcontent.classList.remove("theme");
-    landingcontent.classList.remove("guidelines");
+    landingcontent.classList.remove("sponsors");
     landingcontent.innerHTML = `
     <p class="toptext">Internal competition for</p>
     <h1><span style="color: cyan">TECH</span><span style="color: red;">NOXIAN</span></h1>
@@ -40,7 +40,7 @@ function home(event) {
 function theme(event) {
     landingcontent.classList.add("theme");
     landingcontent.classList.remove("about");
-    landingcontent.classList.remove("guidelines");
+    landingcontent.classList.remove("sponsors");
     landingcontent.innerHTML = `
         <h1><span style="color: cyan">Themes</span> <span style="color: red;">Across</span></h1>
         <div class="grid">
@@ -74,11 +74,11 @@ function theme(event) {
 };
 
 function sponsors(event){
-    landingcontent.classList.add("theme");
+    landingcontent.classList.add("sponsors");
+    landingcontent.classList.remove("theme");
     landingcontent.classList.remove("about");
-    landingcontent.classList.remove("guidelines");
     landingcontent.innerHTML = `
-        <h1><span style="color: cyan">Themes</span> <span style="color: red;">Across</span></h1>
+        <h1><span style="color: cyan">Our</span> <span style="color: red;">Sponsors</span></h1>
         <div class="grid">
             <a href="https://www.technoxian.com/worldcupinnovation-contest#" class="card">
                 <img src="https://www.dropbox.com/scl/fi/oobkizj404268ahqcrhz0/icon_01.png?rlkey=xhfg4shtcb3m6dn0yvjpzr3vz&st=gfj00coe&dl=1" alt="robotics">
