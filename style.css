@@ -142,8 +142,15 @@ a {
     cursor: pointer;
     text-align: center;
     color: #fff9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
+.sponsors.content .grid .card img {
+    height: 7rem;
+    width: 90%;
+}
 .theme.content .grid .card:hover, .sponsors.content .grid .card:hover{
     transform: scale(1.07);
 }
@@ -488,6 +495,7 @@ a {
     .sponsors.content .grid .card img {
         display: block;
         height: 4rem;
+        width: 90%;
     }
 
     .theme.content .grid .card, .sponsors.content .grid .card{
@@ -554,7 +562,7 @@ a {
         font-size: 5.5rem;
     }
 
-    .theme.content h1 {
+    .theme.content h1, .sponsors.content h1{
         font-size: 3.5rem;
     }
 
@@ -630,6 +638,16 @@ a {
         transition: 0.5s;
         cursor: pointer;
         text-align: center;
+    }
+    .theme.content .grid .card{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .sponsors.content .grid .card img {
+        height: 7rem;
+        width: 90%;
     }
 
     .theme.content .grid .card h2 {
