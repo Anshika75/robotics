@@ -81,10 +81,10 @@ function sponsors(event){
         <h1><span style="color: cyan">Our</span> <span style="color: red;">Sponsors</span></h1>
         <div class="grid">
             <a href="https://www.technoxian.com/worldcupinnovation-contest#" class="card">
-                <img src="../assets/sponsor1.png" alt="robotics">
+                <img src="../assets/sponsor1.jpg" alt="robotics">
             </a>
             <a href="https://www.technoxian.com/worldcup" class="card">
-                <img src="../assets/sponsor2.png" alt="drone">
+                <img src="../assets/sponsor2.jpg" alt="drone">
             </a>
             <a href="https://www.technoxian.com/worldcup" class="card">
                 <img src="../assets/sponsor3.png" alt="rc">
